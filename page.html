@@ -1,21 +1,161 @@
-<html>
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Where you at?
-</title>
-</head>
-  <body>
-    <header>
-      <h1>Welcome to the PAGE</h1>
-      <h2>What is your purpose here?</h2>
-<br>
-    </header>
-	  <footer>
-       <h3>Who told you about this though?</h3>
-	  <br>
-	<h4>I dont think you should be here. Go away!	&copy;
-</h4>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	</footer>
-   
-  </body>
+    <title>Where Are You?</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 50px 20px;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: #ffffff;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #ffffff;
+            border-radius: 12px;
+        }
+
+        strong {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        em {
+            color: #ffffff;
+        }
+
+        .gallery {
+            margin-top: 40px;
+        }
+
+        .gallery h2 {
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .images img {
+            width: 350px;
+            height: 600px;
+            object-fit: contain;
+            background-color: #000000;
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .images img {
+                width: 100%;
+                max-width: 350px;
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the Page</h1>
+        <h2>What brings you here?</h2>
+    </header>
+
+    <main class="content">
+
+        <p>
+            <strong>Who told you about this place?</strong>
+        </p>
+
+        <p>
+            <em>
+                I don't think you should be here... but since you're already here,
+                feel free to look around!
+            </em>
+        </p>
+
+        <section class="gallery">
+
+            <h2>🏴‍☠️ One Piece Gallery</h2>
+
+            <div class="images">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/en/0/07/Straw_Hats.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+                    alt="Straw Hat Pirates">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx10mDw-SkRpnCymbshdZ70lpbS5O96Bnz-v0d80BNcw&s=10"
+                    alt="Rocks Pirates">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_DX8LTllN0eycyq1x5C1C6gelI5QRuZ3nXWq1lU_sQ&s=10"
+                    alt="Roger Pirates">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Where Are You?</p>
+    </footer>
+
+</body>
 </html>
+```
